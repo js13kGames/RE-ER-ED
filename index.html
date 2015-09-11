@@ -182,7 +182,7 @@
 			scene = 2;
 			overView.style.display = "flex";
 			gameView.style.display = "none";
-			score_text.innerText = score;
+			score_text.textContent = score;
 		}
 
 		function startgame() {
@@ -203,7 +203,7 @@
 			currentWord = list[Math.floor(Math.random()*list.length)];
 			currentPosition = currentWord.length - 1;
 			setButtons();
-			canvas.innerText = currentWord;
+			canvas.textContent = currentWord;
 		}
 
 		function hurt() {
@@ -275,8 +275,8 @@
 				one = currentWord[currentPosition];
 				two = letters[Math.floor(Math.random()*letters.length)].toUpperCase();
 			}
-			oneb.innerText = one;
-			twob.innerText = two;
+			oneb.textContent = one;
+			twob.textContent = two;
 		}
 
 		var lastTime = Date.now();
